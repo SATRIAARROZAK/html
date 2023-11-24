@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Satria">
+	<title>HTML</title>
+	<link rel="icon" type="image/x-icon" href="img/html5.png">
+</head>
+<style>
+	table{
+		width: 100%;
+	}
+	table, th, td{
+		border: 1px solid black;
+	}
+	tr:nth-child(odd), th:nth-child(even), td:nth-child(even){
+		background-color: rgb(236, 255, 205);
+	}
+	.image{
+		background-image: url(img/laut.jpg);
+	}
+	.image2{
+		background-image: url(img/laut.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: aliceblue;
+	}
+	.image3{
+		background-image: url(img/laut.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		color: aliceblue;
+	}
+	.paragrap:hover{
+		background-color: aqua;
+
+	}
+</style>
+<body>
+
+	<p>HEADING</p>
+
+	<h1>INI HEADING 1</h1>
+	<h2>INI HEADING 2</h2>
+	<h3>INI HEADING 3</h3>
+	<h4>INI HEADING 4</h4>
+	<h5>INI HEADING 5</h3>
+	<h6>INI HEADING 6</h3>
+		<hr>
+		<p>PARAGRAPHS</p>
+		<p>Hypertext Markup Language adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.</p>
+
+		<pre>
+Hypertext Markup Language adalah bahasa markah standar
+untuk dokumen yang dirancang untuk ditampilkan di peramban internet.
+Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.
+		</pre>
+
+		<hr>
+
+<p>FORMATTING</p>
+
+		<!-- Strong mendefinisikan format teks tebal yang penting -->
+		<strong>INI FORMAT TEKS STRONG!</strong><br>
+		<b>INI FORMAT TEKS BOLD.</b>
+
+		<!-- EM atau singkatan dari emphasized mendefinisikan teks miring untuk tekanan verbal-->
+		<p>Seorang guru <em>menyalahkan</em> muridnya</p>
+
+		<!-- i atau italic format ini untuk mendefinisikan frasa, pemikiran, judul dll -->
+		<p>Teks ini menggunakan teks <i>italic</i> di dalamnya </p>
+
+		<p>Teks ini sudah di <del>hapus</del></p>
+
+		<p>Teks ini sudah di <del>hapus </del>dan di <ins>masukkan</ins> lagi</p>
+		
+		<p>Teks ini <small>kecil</small> sekali</p>
+
+		<p>Teks ini sudah <mark>ditandai</mark>	 oleh saya</p> 
+		
+		<p>Teks ini ada di <sub>bawah</sub> teks lain</p>
+
+		<p>Teks ini ada di <sup>atas</sup> teks lain</p>
+		<hr>
+
+		<p>Quotations/Kutipan</p>
+		<p>Ini di ambil dari web Gramedia berikut isinya:</p>
+		<!--<p>Blockquote</p>-->
+		<blockquote >
+			50 Lagu Pop Indonesia Terpopuler – Di zaman yang modern ini mendengarkan lagu-lagu terutama lagu pop sangatlah mudah, hanya dengan smartphone yang kamu miliki sudah bisa mendengarkan berbagai macam lagu pop.
+Kapan kamu mendengarkan lagu pop? Kapan saja bisa mendengarkan lagu pop, tetapi biasanya lagu pop yang didengarkan sesuai suasana hati membuat seseorang akan terasa lebih terhanyut dalam mendengarkan lagu-lagu tersebut.
+Pemilihan lagu ini bisa didasari dari suasana hati, rekomendasi teman, keinginanan sendiri, dan masih banyak lagi. Dari hal ini, kita jadi tahu bahwa setiap orang tidak bisa lepas dari yang namanya sebuah lagu. Sudah menemukan lagu yang enak didengar?
+		</blockquote>
+
+		<!--<p>Q: Quotations/Kutipan</p>-->
+		<p>saya berkata <q>Hey! jangan lah kalian seperti itu</q> ungkap saya</p>
+
+		<!--<p>abbr : Abbrevations/Singkatan</p>-->
+		<p>Kepanjangan dari <abbr title="Perserikatan Bangsa-Bangsa">PBB</abbr> arahkan kursor di sini</p>
+
+		<!--<p>Address</p>-->
+		<address>
+			Nama Penerima: Wahyu Chandra <br>
+			Alamat: Jalan Mangga Besar III No. 17, RT 06 RW 07, Kelurahan Bedali, Kecamatan Lawang, Kab. Malang, Jawa Timur, 60256 <br>
+			HP: 081800100700
+		</address>
+
+		<!--<p>Cite</p>-->
+		<img src="img/html5.png" alt="html5">
+		<p>gambar <cite>HTML</cite> by Satria</p>
+
+		<!--<p>bdo: Bi directional Override</p>-->
+		<bdo dir="rtl">apa iya</bdo>
+		<hr>
+		<p>Link</p>
+
+		<!--_Blank = membuka di tab baru-->
+		<a href="https://g.co/kgs/VwfEs3" target="_blank">YouTube<sup>1</sup></a>
+
+		<!--_Self = Untuk membuka di tab yang sama-->
+		<a href="https://g.co/kgs/VwfEs3" target="_self">YouTube<sup>2</sup></a>
+
+		<!--_Top = Membuka dokumen di seluruh isi jendela-->
+		<a href="https://g.co/kgs/VwfEs3" target="_top">YouTube<sup>3</sup></a>
+
+		<!--_Parent = Membuka dokumen di bingkai induk -->
+		<a href="https://g.co/kgs/VwfEs3" target="_parent">YouTube<sup>4</sup></a>
+
+		<a href="mailto:someone@example.com"> sendmail</a>
+		<hr>
+		<table>
+			<tr>
+				<th colspan="3">DESEMBER</th>
+			</tr>
+			<tr>
+				<td>Sabrina</td>
+				<td>Hani</td>
+				<td>Syakira</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;" rowspan="2" colspan="2">Khalila</td>
+				<td>Syakila</td>
+			</tr>	
+			<tr>
+				<td>Sherin</td>
+			</tr>
+			<tr>
+				<td>Utami</td>
+				<td>Valencia</td>
+				<td>Si Misterius</td>
+			</tr>
+		</table><br>
+		<table>
+			<tr>
+				<th colspan="4">PREMPUAN SAYA</th>
+			</tr>
+			<tr>
+				<th>No</th>
+				<th>Nama</th>
+				<th>Sekolah</th>
+				<th>Umur</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Sabrina Amalia Jamaluka</td>
+				<td>SMAN 14 KOTA BEKASI</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Utami Widya Putri Lestari</td>
+				<td>SMA PATRIOT KOTA BEKASI</td>
+				<td>17</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Adhani Fatiha Wahidah</td>
+				<td>MAN 1 KOTA BEKASI</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Khalillah Putri Aisyah Siregar</td>
+				<td>MTS KOTA BEKASI</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Syakira</td>
+				<td>-</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Gaezka Valencia Shava Ananty</td>
+				<td>SMAN 2 KOTA PONOROGO</td>
+				<td>17</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Si Misterius</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<th colspan="2">Siapakah Jodoh Saya?</th>
+				<th colspan="2">Hanya Allah Yang Tau</th>
+			</tr>
+		</table>
+		<p><a href="table.html">Table</a></p>
+		<hr>
+		<p>Image</p>
+		<p class="image">
+			50 Lagu Pop Indonesia Terpopuler – Di zaman yang modern ini <br>
+			mendengarkan lagu-lagu terutama lagu pop sangatlah mudah, <br>
+			hanya dengan smartphone yang kamu miliki sudah bisa mendengarkan <br>
+			berbagai macam lagu pop. Kapan kamu mendengarkan lagu pop? Kapan <br>
+			saja bisa mendengarkan lagu pop, tetapi biasanya lagu pop yang <br>
+			didengarkan sesuai suasana hati membuat seseorang akan terasa lebih<br> 
+			terhanyut dalam mendengarkan lagu-lagu tersebut. <br>
+			Pemilihan lagu ini bisa didasari dari suasana hati, <br>
+			rekomendasi teman, keinginanan sendiri, dan masih banyak lagi. <br>
+			Dari hal ini, kita jadi tahu bahwa setiap orang tidak bisa lepas dari yang namanya sebuah lagu. <br>
+			Sudah menemukan lagu yang enak didengar?</p>
+		<p class="image2">
+			50 Lagu Pop Indonesia Terpopuler – Di zaman yang modern ini <br>
+			mendengarkan lagu-lagu terutama lagu pop sangatlah mudah, <br>
+			hanya dengan smartphone yang kamu miliki sudah bisa mendengarkan <br>
+			berbagai macam lagu pop. Kapan kamu mendengarkan lagu pop? Kapan <br>
+			saja bisa mendengarkan lagu pop, tetapi biasanya lagu pop yang <br>
+			didengarkan sesuai suasana hati membuat seseorang akan terasa lebih<br> 
+			terhanyut dalam mendengarkan lagu-lagu tersebut. <br>
+			Pemilihan lagu ini bisa didasari dari suasana hati, <br>
+			rekomendasi teman, keinginanan sendiri, dan masih banyak lagi. <br>
+			Dari hal ini, kita jadi tahu bahwa setiap orang tidak bisa lepas dari yang namanya sebuah lagu. <br>
+			Sudah menemukan lagu yang enak didengar?</p>
+
+		<p class="image3">
+				50 Lagu Pop Indonesia Terpopuler – Di zaman yang modern ini <br>
+				mendengarkan lagu-lagu terutama lagu pop sangatlah mudah, <br>
+				hanya dengan smartphone yang kamu miliki sudah bisa mendengarkan <br>
+				berbagai macam lagu pop. Kapan kamu mendengarkan lagu pop? Kapan <br>
+				saja bisa mendengarkan lagu pop, tetapi biasanya lagu pop yang <br>
+				didengarkan sesuai suasana hati membuat seseorang akan terasa lebih<br> 
+				terhanyut dalam mendengarkan lagu-lagu tersebut. <br>
+				Pemilihan lagu ini bisa didasari dari suasana hati, <br>
+				rekomendasi teman, keinginanan sendiri, dan masih banyak lagi. <br>
+				Dari hal ini, kita jadi tahu bahwa setiap orang tidak bisa lepas dari yang namanya sebuah lagu. <br>
+				Sudah menemukan lagu yang enak didengar?</p>
+			<a href="img.html">Image Lanjut</a>
+			<hr>
+			<p>Unorder List</p>
+			<ul style="list-style-type: circle;">
+				<li>Satria</li>
+				<li>Syakira</li>
+				<li>Syakila</li>
+			</ul>
+			<ul style="list-style-type: disc;">
+				<li>Satria</li>
+				<li>Syakira</li>
+				<li>Syakila</li>
+			</ul>
+			<ul style="list-style-type: square;">
+				<li>Satria</li>
+				<li>Syakira</li>
+				<li>Syakila</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<li>Satria</li>
+				<li>Syakira</li>
+				<li>Syakila</li>
+			</ul>
+			<ul >
+				<li>Satria</li>
+				<ul >
+					<li>Syakira</li>
+					<li>Syakira</li>
+					<li>Syakira</li>
+				</ul>
+				<li>Syakira
+					<ul >
+						<li>Satria</li>
+						<li>Satria</li>
+						<li>Satria</li>
+					</ul>
+				</li>
+				<li>Syakila</li>
+			</ul>
+			<a href="unorderlist.html">NEXT</a>
+			<hr>
+			<p>Order List</p>
+			<ol type="1">
+				<li>Satria</li>
+				<li>Syakira</li>
+				<li>Syakila</li>
+			</ol>
+			<ol type="A">
+				<li>Satria</li>
+				<li>Syakira</li>
+				<li>Syakila</li>
+			</ol>
+			<ol type="a">
+				<li>Satria</li>
+				<li>Syakira</li>
+				<li>Syakila</li>
+			</ol>
+			<ol type="I">
+				<li>Satria</li>
+				<li>Syakira</li>
+				<li>Syakila</li>
+			</ol>
+			<ol type="i">
+				<li>Satria</li>
+				<li>Syakira</li>
+				<li>Syakila</li>
+			</ol>
+
+				<ol>
+					<li>Satria
+						<ol>
+							<li>Syakira</li>
+							<li>Syakira</li>
+							<li>Syakira</li>
+						</ol>
+					</li>
+					<li>Syakira
+						<ol>
+							<li>Satria</li>
+							<li>Satria</li>
+							<li>Satria</li>
+						</ol>
+					</li>
+					<li>Syakila</li>
+			</ol>
+			<ol type="A" start="20">
+				<li>mouse</li>
+				<li>Keyboard</li>
+				<li>Laptop</li>
+			</ol>
+			<hr>
+			<p>Deskripsi List</p>
+			<dl >
+				<dt>KIPAS</dt>
+				<dd>Tembok</dd>
+				<dd>2IN1</dd>
+				<dd>Kecil</dd>
+			</dl>
+			<dl>
+				<dt>Tas
+					<ol>
+						<li>Backpack</li>
+					</ol>
+				</dt>
+					
+			</dl>
+	<hr>
+	<p>Class</p>
+	<p class="paragrap">
+		50 Lagu Pop Indonesia Terpopuler – Di zaman yang modern ini <br>
+			mendengarkan lagu-lagu terutama lagu pop sangatlah mudah, <br>
+			hanya dengan smartphone yang kamu miliki sudah bisa mendengarkan <br>
+			berbagai macam lagu pop. Kapan kamu mendengarkan lagu pop? Kapan <br>
+			saja bisa mendengarkan lagu pop, tetapi biasanya lagu pop yang <br>
+			didengarkan sesuai suasana hati membuat seseorang akan terasa lebih<br> 
+			terhanyut dalam mendengarkan lagu-lagu tersebut. <br>
+			Pemilihan lagu ini bisa didasari dari suasana hati, <br>
+			rekomendasi teman, keinginanan sendiri, dan masih banyak lagi. <br>
+			Dari hal ini, kita jadi tahu bahwa setiap orang tidak bisa lepas dari yang namanya sebuah lagu. <br>
+			Sudah menemukan lagu yang enak didengar?
+	</p>
+	<hr>
+	<p>Id = Identitas</p>
+
+	<a href="#6">BAB 6</a>
+	<p  id="1">BAB 1</p>
+	<p class="paragrap">
+		50 Lagu Pop Indonesia Terpopuler – Di zaman yang modern ini <br>
+			mendengarkan lagu-lagu terutama lagu pop sangatlah mudah, <br>
+			hanya dengan smartphone yang kamu miliki sudah bisa mendengarkan <br>
+			berbagai macam lagu pop. Kapan kamu mendengarkan lagu pop? Kapan <br>
+			saja bisa mendengarkan lagu pop, tetapi biasanya lagu pop yang <br>
+			didengarkan sesuai suasana hati membuat seseorang akan terasa lebih<br> 
+			terhanyut dalam mendengarkan lagu-lagu tersebut. <br>
+			Pemilihan lagu ini bisa didasari dari suasana hati, <br>
+			rekomendasi teman, keinginanan sendiri, dan masih banyak lagi. <br>
+			Dari hal ini, kita jadi tahu bahwa setiap orang tidak bisa lepas dari yang namanya sebuah lagu. <br>
+			Sudah menemukan lagu yang enak didengar?
+	</p>
+
+	<p id="2">BAB 2</p>
+	<p class="paragrap">
+		50 Lagu Pop Indonesia Terpopuler – Di zaman yang modern ini <br>
+			mendengarkan lagu-lagu terutama lagu pop sangatlah mudah, <br>
+			hanya dengan smartphone yang kamu miliki sudah bisa mendengarkan <br>
+			berbagai macam lagu pop. Kapan kamu mendengarkan lagu pop? Kapan <br>
+			saja bisa mendengarkan lagu pop, tetapi biasanya lagu pop yang <br>
+			didengarkan sesuai suasana hati membuat seseorang akan terasa lebih<br> 
+			terhanyut dalam mendengarkan lagu-lagu tersebut. <br>
+			Pemilihan lagu ini bisa didasari dari suasana hati, <br>
+			rekomendasi teman, keinginanan sendiri, dan masih banyak lagi. <br>
+			Dari hal ini, kita jadi tahu bahwa setiap orang tidak bisa lepas dari yang namanya sebuah lagu. <br>
+			Sudah menemukan lagu yang enak didengar?
+	</p>
+
+	<p id="3">BAB 3</p>
+	<p class="paragrap">
+		50 Lagu Pop Indonesia Terpopuler – Di zaman yang modern ini <br>
+			mendengarkan lagu-lagu terutama lagu pop sangatlah mudah, <br>
+			hanya dengan smartphone yang kamu miliki sudah bisa mendengarkan <br>
+			berbagai macam lagu pop. Kapan kamu mendengarkan lagu pop? Kapan <br>
+			saja bisa mendengarkan lagu pop, tetapi biasanya lagu pop yang <br>
+			didengarkan sesuai suasana hati membuat seseorang akan terasa lebih<br> 
+			terhanyut dalam mendengarkan lagu-lagu tersebut. <br>
+			Pemilihan lagu ini bisa didasari dari suasana hati, <br>
+			rekomendasi teman, keinginanan sendiri, dan masih banyak lagi. <br>
+			Dari hal ini, kita jadi tahu bahwa setiap orang tidak bisa lepas dari yang namanya sebuah lagu. <br>
+			Sudah menemukan lagu yang enak didengar?
+	</p>
+
+	<p id="4">BAB 4</p>
+
+	<p id="5">BAB 5</p>
+
+	<p id="6">BAB 6</p>
+
+	<a href="id.html#bab5">BAB 5</a>
+	<hr>
+    <p>Iframe</p>
+    <iframe src="img/laut.jpg" frameborder="0" title="laut"></iframe>
+	<iframe src="img/Siapa.jpg" style="border: none;" name="frame" title="frame" height="150" width="100" ></iframe>
+	<br>
+	<br>
+	<iframe src="img/html.png" name="iframe2" style="height: 150px;width: 300px;border: none;" ></iframe>
+	<p><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9382558324264!2d106.73915117378388!3d-6.271850093716879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f068b0587279%3A0xcb9b7f6bf691a557!2sBintaro%20Plaza%2C%20Pd.%20Karya%2C%20Kec.%20Pd.%20Aren%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015224!5e0!3m2!1sid!2sid!4v1695308842251!5m2!1sid!2sid" target="iframe2" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Maps</a></p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9382558324264!2d106.73915117378388!3d-6.271850093716879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f068b0587279%3A0xcb9b7f6bf691a557!2sBintaro%20Plaza%2C%20Pd.%20Karya%2C%20Kec.%20Pd.%20Aren%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015224!5e0!3m2!1sid!2sid!4v1695308842251!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
